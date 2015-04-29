@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>采美好项目</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+<link rel="stylesheet" href="css/common/common.css" >
+<link rel="stylesheet" href="css/common/fonts.css" >
+<link rel="stylesheet" href="css/jelon/style.css" >
+
+<!-- 导入js类库库 -->
+<script>
+document.write('<script src="js/lib/' + ('__proto__' in {} ? 'zepto.min' : 'jquery.min') + '.js"><\/script>');
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<!-- 商品图片  -->
+	<div class="img-box" id="CAIMEI____swipe_box">
+		<!-- 大图列表 -->
+		<div class="img-main">
+			<ul>
+				<li class="item">
+					<a href="#">
+						<img src="img/item/1.jpg" alt="大图" >
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<img src="img/item/2.jpg" alt="大图" >
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<img src="img/item/3.jpg" alt="大图" >
+					</a>
+				</li>
+				<li class="item">
+					<a href="#">
+						<img src="img/item/4.jpg" alt="大图" >
+					</a>
+				</li>
+			</ul>
+
+
+		</div>
+		<!-- / 大图列表 -->
+
+		<!-- 缩略图 -->
+		<div class="img-thumbnail">
+			<ul>
+				<li class="item current">
+					<img src="img/item/1.jpg" alt="缩略图" >
+				</li>
+				<li class="item">
+					<img src="img/item/2.jpg" alt="缩略图" >
+				</li>
+				<li class="item">
+					<img src="img/item/3.jpg" alt="缩略图" >
+				</li>
+				<li class="item">
+					<img src="img/item/4.jpg" alt="缩略图" >
+				</li>
+			</ul>
+		</div>
+		<!-- / 缩略图  -->
+	</div>
+
+	<!-- 商品价格及名称 -->
+	<div class="goods-details">
+		<div class="goods-name">美容院品牌策划经典教程</div>
+		<h2 class="goods-price">￥998</h2>
+	</div>
+
+	<!-- 商品计算 -->
+	<div class="goods-counter">
+		<div class="counter-l fl">
+			<p class="title">数量</p>
+			<div class="interpret">
+				<div class="nums">
+					<span class="minus">-</span>
+					<input type="text" class="input-num" value="1" >
+					<span class="plus">+</span>
+				</div>
+			</div>
+		</div>
+		<div class="counter-r fr">
+			<span>赠送采美豆：</span>
+			<span class="red">￥10</span>
+		</div>
+	</div>
+
+	<!-- 商品标签 -->
+	<div class="goods-tags">
+		<dl>
+			<dt>解决问题</dt>
+			<dd>
+				<span class="tag">品牌策划</span>
+				<span class="tag">美业品牌</span> 
+			</dd>
+		</dl>
+		<dl>
+			<dt>规则</dt>
+			<dd>
+				<span class="tag">标签</span>
+				<span class="tag">标签</span>
+			</dd>
+		</dl>
+	</div>
+	
+	<!-- 商品信息，详情及评论 -->
+	<div class="goods-infos">
+		<div class="tab-hd clearfix" id="CAIMEI____hd">
+			<div class="item current">商品详情</div>
+			<div class="item">评论</div>
+		</div>
+		<div class="tab-con" id="CAIMEI____con">
+			<div class="item current">
+				<p>
+					<img src="img/item/1.jpg" alt="xxx" >
+				</p>
+			</div>
+			<div class="item">
+				<header class="comment-hd clearfix"><span class="icon-list-checked fl"> 评价（100）</span> <span class="icon-pingjia fr"> 总分（20）</span></header>
+				<div class="comment-main">
+					<div class="post">
+						<div class="post-meta clearfix">
+							<span class="post-author fl">琉璃时光 <date>2015-03-07</date></span> 
+							<span class="fr red">10</span>
+						</div>
+						<div class="post-main">
+						牵晔的服务相当专业，相当有效。20年的美业品牌策划经验，擅长品牌策划、品牌营销服务，运用专业品牌营销，帮助企业“智慧、创意、创新”，以更经济更快速的方式打开市场的专业服务。实战型品牌策划为企业提供市场走访调研、动并提供培训与指导。
+						</div>
+					</div>
+					<div class="post">
+						<div class="post-meta clearfix">
+							<span class="post-author fl">琉璃时光 <date>2015-03-07</date></span> 
+							<span class="fr red">10</span>
+						</div>
+						<div class="post-main">
+						牵晔的服务相当专业，相当有效。20年的美业品牌策划经验，擅长品牌策划、品牌营销服务，运用专业品牌营销，帮助企业“智慧、创意、创新”，以更经济更快速的方式打开市场的专业服务。实战型品牌策划为企业提供市场走访调研、动并提供培训与指导。
+						</div>
+					</div>
+				</div>
+				<div class="load-more"><span class="icon-loader"></span> 上拉加载更多</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- 底部购买入口 -->
+<footer class="footer clearfix">
+	<div class="cart fl">
+		<a class="my-favo" href="#"><i class="icon-shoucang-o"></i><br>收藏</a>
+		<a href="#" class="btn-cart">加入购物车</a>
+	</div>
+	<div class="buy fl">
+		<a href="#" class="btn-buy">立即购买</a>
+		<a class="my-cart" href="#"><i class="icon-gouwuche"></i><br>购物车</a>
+	</div>
+</footer>
+
+<script src="js/plugin/swipeSlide.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

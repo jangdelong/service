@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>购物车</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+<link rel="stylesheet" href="css/common/common.css" >
+<link rel="stylesheet" href="css/common/fonts.css" >
+<link rel="stylesheet" href="css/jelon/style.css" >
+
+<!-- 导入js类库库 -->
+<script>
+document.write('<script src="js/lib/' + ('__proto__' in {} ? 'zepto.min' : 'jquery.min') + '.js"><\/script>');
+</script>
+</head>
+
+
+<body class="cart-wrap">
+<div class="tit">
+	<p>
+		配送：
+		<span class="gray">广东 深圳市福田区购物公园C13室</span>
+		<a href="#" class="edit fr"><i class="icon-bianji"></i> 编辑</a>
+	</p>
+	<p class="del">
+		<a href="javascript: void(0);"><i class="icon-trash-o"></i> 删除商品 </a>
+	</p>
+</div>
+<div class="cart-list-wrap" id="CAIMEI____checkboxes">
+	<!-- 一个商家为一个cart-list -->
+	<div class="cart-list">
+		<div class="cart-list-hd">
+			这是某某厂家
+		</div>
+		<div class="cart-list-bd">
+			<div class="item">
+				<div class="item-l">
+					<div class="checkbox">
+						<div class="icon-check"></div>
+					</div>
+					<div class="pic">
+						<img src="img/item/1.jpg" alt="商品图片" >
+					</div>
+				</div>
+				<div class="item-r">
+					<header class="name"><a href="#">很好用商品（品牌）F330美白洗面奶深海黑泥呵呵呵呵呵呵呵呵...</a></header>
+					<div class="sum clearfix">
+						<!-- 如果是后台直接加载过来的数据，请把它放在data-上，不懂问前端 -->
+						<span class="price red" data-price="10.00">￥10.00</span>
+						<span class="caimei-bean fr" data-caimei-bean="1.00">赠送采美豆：<em class="red">1.00</em></span>
+					</div>
+					<div class="sku">
+						红色、4寸、美白
+					</div>
+					<div class="goods-counter">
+						<div class="counter-l">
+							<p class="title">数量</p>
+							<div class="interpret">
+								<div class="nums">
+									<span class="minus">-</span>
+									<input type="text" class="input-num" value="1">
+									<span class="plus">+</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-l">
+					<div class="checkbox">
+						<div class="icon-check"></div>
+					</div>
+					<div class="pic">
+						<img src="img/item/2.jpg" alt="商品图片" >
+					</div>
+				</div>
+				<div class="item-r">
+					<header class="name"><a href="#">很好用商品（品牌）F330美白洗面奶深海黑泥呵呵呵呵呵呵呵呵...</a></header>
+					<div class="sum clearfix">
+						<!-- 如果是后台直接加载过来的数据，请把它放在data-上，不懂问前端 -->
+						<span class="price red" data-price="10.00">￥10.00</span>
+						<span class="caimei-bean fr" data-caimei-bean="1.00">赠送采美豆：<em class="red">1.00</em></span>
+					</div>
+					<div class="sku">
+						红色、4寸、美白
+					</div>
+					<div class="goods-counter">
+						<div class="counter-l">
+							<p class="title">数量</p>
+							<div class="interpret">
+								<div class="nums">
+									<span class="minus">-</span>
+									<input type="text" class="input-num" value="1">
+									<span class="plus">+</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 小结 -->
+		<div class="total">
+			应付：<span class="total-price red">￥<span class="brief-amount">20.00</span></span>
+		</div>
+	</div>
+	<!-- 一个商家为一个cart-list -->
+	<div class="cart-list">
+		<div class="cart-list-hd">
+		这是某某厂家
+		</div>
+		<div class="cart-list-bd">
+			<div class="item">
+				<div class="item-l">
+					<div class="checkbox">
+						<div class="icon-check"></div>
+					</div>
+					<div class="pic">
+						<img src="img/item/2.jpg" alt="商品图片" >
+					</div>
+				</div>
+				<div class="item-r">
+					<header class="name"><a href="#">很好用商品（品牌）F330美白洗面奶深海黑泥呵呵呵呵呵呵呵呵...</a></header>
+					<div class="sum clearfix">
+						<!-- 如果是后台直接加载过来的数据，请把它放在data-上，不懂问前端 -->
+						<span class="price red" data-price="10.00">￥10.00</span>
+						<span class="caimei-bean fr" data-caimei-bean="1.00">赠送采美豆：<em class="red">1.00</em></span>
+					</div>
+					<div class="sku">
+						红色、4寸、美白
+					</div>
+					<div class="goods-counter">
+						<div class="counter-l">
+							<p class="title">数量</p>
+							<div class="interpret">
+								<div class="nums">
+									<span class="minus">-</span>
+									<input type="text" class="input-num" value="1">
+									<span class="plus">+</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- 小结 -->
+		<div class="total">
+			应付：<span class="total-price red">￥<span class="brief-amount">20.00</span></span>
+		</div>
+	</div>
+</div>
+
+<!-- 底部结算入口 -->
+<footer class="footer clearfix">
+	<div class="select-all" id="CAIMEI____select_all">
+		<div class="checkbox">
+			<div class="icon-check"></div>
+		</div>
+		<div class="label">全选</div>
+	</div>
+	<div class="sum-details">
+		<p>总计：<em class="red bold">￥<span id="CAIMEI____sum_price">20.00</span></em></p>
+		<p class="tips">（共2件，不含运费）</p>
+	</div>
+	<div class="sum-up">
+		<a href="#" class="btn-cal">结算</a>
+	</div>
+</footer>
+
+<script src="js/plugin/zepto.jslider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>服务商账号中心</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+<link rel="stylesheet" href="css/common/common.css" >
+<link rel="stylesheet" href="css/common/fonts.css" >
+<link rel="stylesheet" href="css/jelon/style.css" >
+<!-- 导入js类库库 -->
+<script>
+document.write('<script src="js/lib/' + ('__proto__' in {} ? 'zepto.min' : 'jquery.min') + '.js"><\/script>');
+</script>
+</head>
+
+<body>
+<div class="container">
+	<!-- 列表hd -->
+	<header class="list-hd" id="CAIMEI____hd">
+		<ul>
+			<li class="item current"><div><a href="javacript: void(0);">全部订单</a></div></li>
+			<li class="item"><div><a href="javacript: void(0);">待付款</a></div></li>
+			<li class="item"><div><a href="javacript: void(0);">服务中</a></div></li>
+			<li class="item last"><div><a href="javacript: void(0);">待评价</a></div></li>
+		</ul>
+	</header>
+	<!-- 订单list -->
+	<section class="list-con" id="CAIMEI____con">
+		<!-- 全部订单 -->
+		<div class="item current">
+			<ul class="order-box">
+				<li class="order-item">
+					<!-- 订单概要 -->
+					<div class="order-infos">
+						<p>状态：<span class="red">待支付</span></p>
+						<p>总价：<span class="red">￥159.00</span></p>
+						<a href="#" class="btn btn-paying">去支付</a>
+					</div>
+					<!-- 订单的商品列表 -->
+					<div class="order-goods">
+						<div class="order-goods-seller">
+							<header class="order-seller-hd">
+								商家名称
+							</header>
+							<section class="order-seller-bd">
+								<dl>
+									<dt class="goods-pic"><img src="img/item/1.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+								<dl>
+									<dt class="goods-pic"><img src="img/item/2.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+                       		</section>
+                       	</div>
+					</div>
+				</li>
+
+				<li class="order-item">
+					<div class="order-infos">
+						<p>状态：<span class="green">待支付</span></p>
+						<p>总价：<span class="red">￥159.00</span></p>
+						<a href="#" class="btn btn-commenting">评价晒单</a>
+					</div>
+					<!-- 订单的商品列表 -->
+					<div class="order-goods">
+						<div class="order-goods-seller">
+							<header class="order-seller-hd">
+								商家名称
+							</header>
+							<section class="order-seller-bd">
+								<dl>
+									<dt class="goods-pic"><img src="img/item/3.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+								<dl>
+									<dt class="goods-pic"><img src="img/item/4.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+		                	</section>
+		                </div>
+					</div>
+				</li>
+				<li class="order-item">
+					<div class="order-infos">
+						<p>状态：<span class="blue">待支付</span></p>
+						<p>总价：<span class="red">￥159.00</span></p>
+						<a href="#" class="btn btn-repaying">再次购买</a>
+					</div>
+					<!-- 订单的商品列表 -->
+					<div class="order-goods">
+						<div class="order-goods-seller">
+							<header class="order-seller-hd">
+								商家名称
+							</header>
+							<section class="order-seller-bd">
+								<dl>
+									<dt class="goods-pic"><img src="img/item/5.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+
+								<dl>
+									<dt class="goods-pic"><img src="img/item/6.jpg" alt="xxx" ></dt>
+									<dd class="goods-text">
+										<p>很好用商品（品牌） F330美白洗面奶深海黑泥呵呵呵呵...</p>
+										<p><em>1</em> 件</p>
+									</dd>
+		                       	</dl>
+		        			</section>
+		        		</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="load-more"><span class="icon-shangla"></span> 上拉加载更多</div>
+		</div>
+		<!-- 待付款订单 -->
+		<div class="item">
+			<!-- 这里内容同上一个div里面的结构 不懂问前端 -->
+		</div>
+		<!-- 服务中订单 -->			
+		<div class="item"></div>
+		<!-- 待评价订单 -->
+		<div class="item"></div>	
+	</section>
+</div>
+
+
+<script src="js/plugin/zepto.jslider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

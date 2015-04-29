@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>搜索（培训）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+<link rel="stylesheet" href="css/common/common.css" >
+<link rel="stylesheet" href="css/common/fonts.css" >
+<link rel="stylesheet" href="css/jelon/style.css" >
+
+<!-- 导入js类库库 -->
+<script>
+document.write('<script src="js/lib/' + ('__proto__' in {} ? 'zepto.min' : 'jquery.min') + '.js"><\/script>');
+</script>
+</head>
+
+<body class="srch-list-wrap">
+<!-- 头部搜索框 -->
+<header class="srch-bar">
+	<div class="srch-box">
+		<input type="text" class="srch-input" placeholder="输入关键字" >
+		<button type="button" class="srch-submit">
+			<span class="icon-search"></span>
+		</button>
+	</div>
+</header>
+<!-- / 头部搜索框 -->
+
+<!-- 搜索列表 -->
+<div class="list-wrap">
+	<nav class="list-nav">
+		<div class="item selected">
+			<a href="javascript: void(0);">
+				默认
+			</a>
+		</div>
+		<div class="item">
+			<a href="javascript: void(0);">
+				评价数
+				<span class="sort up"></span>
+			</a>
+		</div>
+	</nav>
+
+	<section class="p-list-main">
+		<a class="item" href="#">
+			<div class="avatar">
+				<img src="img/item/1.jpg" alt="xxx" >
+			</div>
+
+			<div class="item-infos">
+				<div class="infos-dt">
+					刘璐 <span class="label">协销</span>
+					<p class="meta">
+						<span><i class="icon-list"></i> 100案例</span>
+						<span><i class="icon-dizhi"></i> 广东</span>
+					</p>
+				</div>
+				<div class="infos-dd">
+					<p>专注协销服务10余年，常规店销终端客单价428万记录，近5年累计直接创造终端业绩1亿。</p>
+				</div>
+			</div>
+		</a>
+
+		<a class="item" href="#">
+			<div class="avatar">
+				<img src="img/item/2.jpg" alt="xxx" >
+			</div>
+
+			<div class="item-infos">
+				<div class="infos-dt">
+					刘璐 <span class="label">协销</span>
+					<p class="meta">
+						<span><i class="icon-list"></i> 100案例</span>
+						<span><i class="icon-dizhi"></i> 广东</span>
+					</p>
+				</div>
+				<div class="infos-dd">
+					<p>专注协销服务10余年，常规店销终端客单价428万记录，近5年累计直接创造终端业绩1亿。</p>
+				</div>
+			</div>
+		</a>
+	</section>
+
+	<div class="load-more"><span class="icon-shangla"></span> 上拉加载更多</div>
+</div>
+<!-- / 搜索列表 -->
+
+</body>
+</html>

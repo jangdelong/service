@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>搜索列表页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+<meta name="apple-mobile-web-app-capable" content="yes" >
+<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+
+<link rel="stylesheet" href="css/common/common.css" >
+<link rel="stylesheet" href="css/common/fonts.css">
+<link rel="stylesheet" href="css/jelon/style.css" >
+
+<!-- 导入js类库库 -->
+<script>
+document.write('<script src="js/lib/' + ('__proto__' in {} ? 'zepto.min' : 'jquery.min') + '.js"><\/script>');
+</script>
+</head>
+
+<body class="srch-list-wrap">
+<!-- 头部搜索框 -->
+<header class="srch-bar">
+	<div class="srch-box">
+		<input type="text" class="srch-input" placeholder="输入关键字" >
+		<button type="button" class="srch-submit">
+			<span class="icon-search"></span>
+		</button>
+	</div>
+</header>
+<!-- / 头部搜索框 -->
+
+<div class="list-wrap">
+	<nav class="list-nav">
+		<div class="item selected">
+			<a href="javascript: void(0);">默认</a>
+		</div>
+		<div class="item">
+			<a href="javascript: void(0);">
+				价格
+				<span class="sort up"></span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="javascript: void(0);">
+				销量 <span class="sort down"></span>
+			</a>
+		</div>
+		<div class="item">
+			<a href="javascript: void(0);">
+				评价数 <span class="sort up"></span>
+			</a>
+		</div>
+	</nav>
+
+	<section class="list-main clearfix">
+		<div class="item-link-wrap">
+			<a class="item-link" href="#">
+				<img src="img/item/1.jpg" alt="xxx" >
+				<p class="name">绿芳洲 洁面巾 100cm 白色...</p>
+				<p class="price">￥10.00</p>
+			</a>
+		</div>
+		<div class="item-link-wrap">
+			<a class="item-link" href="#">
+				<img src="img/item/2.jpg" alt="xxx" >
+				<p class="name">绿芳洲 洁面巾 100cm 白色...</p>
+				<p class="price">￥10.00</p>
+			</a>
+		</div>
+		<div class="item-link-wrap">
+			<a class="item-link" href="#">
+				<img src="img/item/3.jpg" alt="xxx" >
+				<p class="name">绿芳洲 洁面巾 100cm 白色...</p>
+				<p class="price">￥10.00</p>
+			</a>
+		</div>
+	</section>
+	<div class="load-more"><span class="icon-shangla"></span> 上拉加载更多</div>
+</div>
+
+<script src="js/plugin/zepto.jslider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
